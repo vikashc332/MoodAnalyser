@@ -1,0 +1,26 @@
+package Moodanalyser;
+
+
+
+public class moodanalyser {
+	
+	public static String findMood(String str) throws MoodAnalizer {
+		if(str==null || str.isEmpty()) {
+			throw new MoodAnalizer("Mood Is not found");
+		}
+		if(str.contains("Sad")) {
+			return "SAD";
+		}
+		else  {
+			return "HAPPY";
+		}
+	}
+
+	public static void main(String[] args) throws MoodAnalizer {
+		// TODO Auto-generated method stub
+		
+            String str="I am in Sad moodf";
+           
+     System.out.println(findMood(str));
+}
+}
