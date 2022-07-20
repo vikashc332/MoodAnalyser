@@ -1,0 +1,14 @@
+package Moodanalyser;
+
+public class MainException {
+
+	public static void main(String args[]) {
+		try {
+			throw new MoodAnalizer("This is a custom message");
+		} catch (MoodAnalizer e) {
+			System.out.println(e);
+		}
+	}
+}
+
+
